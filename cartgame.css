@@ -1,0 +1,15 @@
+body {
+    background-color: #555;
+}
+
+#gameSpace {
+    background-color: red;
+    position: relative;
+    width: 80%;
+    height:80%;
+    max-width:720px;
+    max-height:1280px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
