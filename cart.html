@@ -11,11 +11,14 @@
 
          
 
-
+        
     </head>
     <body>
-        <canvas id="gameSpace" width="720" height="1280"></canvas>
+        <div class = "container" onclick = "timerStart()">
+            <canvas id="gameSpace" width="1280" height="720" onclick="showCoords(event)" onload=""></canvas>
+        </div>
         
         <script type="text/javascript" src="cartgame.js"></script>
+        <h1 id="demo"></h1>
     </body>
 </html>
