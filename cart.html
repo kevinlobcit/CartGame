@@ -5,20 +5,20 @@
         <meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1, maximum-scale=1,user-scalable=0"/>
         <meta name="apple-mobile-web-app-capable" content="yes"/>
         <meta name="apple-mobile-web-status-bar-style" content="black-translucent"/>
+        <meta name="mobile-web-app-capable" content="yes">
         <title>Shopping Overshop</title>
         
         <link rel="stylesheet" type="text/css" href="cartgame.css"/>
-
+        <link rel="manifest" href="cartmanifest.json"/>
          
 
         
     </head>
     <body>
         <div class = "container" onclick = "timerStart()">
-            <canvas id="gameSpace" width="1280" height="720" onclick="showCoords(event)" onload=""></canvas>
+            <canvas id="gameSpace" width="1280" height="720"></canvas>
         </div>
         
         <script type="text/javascript" src="cartgame.js"></script>
-        <h1 id="demo"></h1>
     </body>
 </html>

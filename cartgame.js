@@ -3,9 +3,6 @@ startButton.innerHTML = "Start Game";
 
 var gameStarted = 0;
 
-var x;//get horizontal coord
-var y;//get vertical coord
-
 var difficulty = 1;
 var gameTime = 60; //The game time per round until difficulty increases
 var timer; //used as the variable for the time counter
@@ -13,13 +10,6 @@ var timer; //used as the variable for the time counter
 var canvas = document.getElementById("gameSpace");
 
 var timerWords = canvas.getContext("2d");
-
-function showCoords(event) { //justshows the coordinates for now
-    x = event.clientX;
-    y = event.clientY;
-    var coords = "X coords: " + x + ", Y coords: " + y;
-    document.getElementById("demo").innerHTML = coords;
-}
 
 function timerStart() { //used to start the timer when the canvas is clicked
     if(gameStarted == 0) {
@@ -34,11 +24,10 @@ function timerFunc() { //is the timer
         gameTime = 60;
         difficulty++;
     }
-    timerWords.font = "20px Arial";
+    timerWords.font = "20px Verdana";
     timerWords.strokeText("Time Left: " + gameTime,5,20);
     gameTime--;
 }
-
 
 
 
